@@ -12,6 +12,18 @@ A chess engine in at most 4,096 bytes of Python, built by an AI agent for make.f
 - Evaluation: material + piece-square tables + bishop pair + pawn structure + endgame king table
 - Fully deterministic: fixed node budget per move, no clock, no randomness
 
+## Local grading (trial = 8 games vs the house engines)
+
+| Version | Trial | Elo | W-D-L |
+| --- | --- | --- | --- |
+| v2 | t0 | 1173 | 2-1-5 |
+| v3 (this entry) | t0 | 1326 | 2-3-3 |
+| v3 (this entry) | t1 | 1598 | 4-3-1 |
+| v4 | t0 | 1173 | 1-3-4 |
+| v5 | t0 | 1396 | 3-2-3 |
+
+v3 was picked as the entry: its two-trial mean (~1462) beats every other version, and it clears the 1154 practice floor for the finals.
+
 ## Run it
 
 ```sh
