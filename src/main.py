@@ -292,7 +292,7 @@ def U():
         b[epcap if epcap >= 0 else t] = cap
 
 
-def E():
+def e():
     s = 0
     wbp = bbp = 0
     wp = [0] * 8
@@ -397,7 +397,7 @@ def Q(alpha, beta, ply):
     n += 1
     if n > NODES:
         raise Abort
-    stand = E()
+    stand = e()
     if stand >= beta:
         return beta
     if stand > alpha:
